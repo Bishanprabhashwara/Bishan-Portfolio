@@ -1,6 +1,10 @@
 import Sidebar from "../sidebar/Sidebar";
 import "./navbar.scss";
 import { motion } from "framer-motion";
+import img1 from "./facebook.png";
+import img2 from "./instagram.png";
+import img3 from "./youtube.png";
+import img4 from "./dribbble.png";
 
 const Navbar = () => {
   return (
@@ -17,16 +21,16 @@ const Navbar = () => {
         </motion.span>
         <div className="social">
           <a href="https://www.facebook.com/bishan.prabhashwara.3?mibextid=LQQJ4d">
-            <img src="/facebook.png" alt="" />
+            <img src={img1} alt="" />
           </a>
           <a href="https://www.instagram.com/bishan_prabhashwara?igsh=dWF0aHAxa2QzcjB4&utm_source=qr">
-            <img src="/instagram.png" alt="" />
+            <img src={img2}alt="" />
           </a>
           <a href="https://www.linkedin.com/in/bishan-prabhashwara-0040a5223?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
-            <img src="/youtube.png" alt="" />
+            <img src={img3} alt="" />
           </a>
           <a href="https://github.com/Bishanprabhashwara">
-            <img src="/dribbble.png" alt="" />
+            <img src={img4} alt="" />
           </a>
         </div>
       </div>
