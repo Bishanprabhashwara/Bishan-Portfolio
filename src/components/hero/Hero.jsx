@@ -1,3 +1,5 @@
+import img1 from "./hero.png";
+import img2 from  "./scroll.png";
 import "./hero.scss";
 import { motion } from "framer-motion";
 
@@ -55,7 +57,7 @@ const Hero = () => {
           <motion.img
             variants={textVariants}
             animate="scrollButton"
-            src="/scroll.png"
+            src={img2}
             alt=""
           />
         </motion.div>
@@ -69,7 +71,8 @@ const Hero = () => {
         AI Developer Full-Stack Developer
       </motion.div>
       <div className="imageContainer">
-        <img src="./hero.png" alt="" />
+        <img src={img1} alt="" />
+        
       </div>
     </div>
   );
