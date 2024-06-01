@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import "./services.scss";
+import img1 from "./people.webp";
 import { motion, useInView } from "framer-motion";
 
 const variants = {
@@ -29,6 +30,8 @@ const Services = () => {
       className="services"
       variants={variants}
       initial="initial"
+    //    animate="animate"
+    //    whileInView="animate"
       ref={ref}
       animate={"animate"}
     >
@@ -41,7 +44,7 @@ const Services = () => {
       </motion.div>
       <motion.div className="titleContainer" variants={variants}>
         <div className="title">
-          <img src="/people.webp" alt="" />
+          <img src={img1} alt="" />
           <h1>
             <motion.b whileHover={{color:"orange"}}>Unique</motion.b> Ideas
           </h1>
