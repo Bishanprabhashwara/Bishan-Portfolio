@@ -19,6 +19,13 @@ html {
     text-decoration: none;
     color: inherit;
   }
+
+#skills{
+    height: 230vh;
+    width: 100vw;
+    scroll-snap-align: center;
+    overflow: hidden;
+  }
   
   section {
     height: 100vh;
